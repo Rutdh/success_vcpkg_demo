@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fmt/core.h>
 #include <json/json.h>
+#include "gtest/gtest.h"
 
 int main() {
     int num = 42;

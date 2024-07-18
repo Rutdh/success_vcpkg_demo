@@ -17,7 +17,7 @@ All MSBuild C++ projects can now #include any installed libraries. Linking will 
 然后我们只要把`-DCMAKE_TOOLCHAIN_FILE`这句代码加入到cmake构建语句中，即可完成集成vcpkg，如下所示
 
 ~~~bat
-cmake -S . -B build -DCMAKE_TOOLCHAIN_FILE=C:/dev/vcpkg/scripts/buildsystems/vcpkg.cmake
+cmake -S . -B build -DCMAKE_TOOLCHAIN_FILE=F:/vcpkg/scripts/buildsystems/vcpkg.cmake
 ~~~
 
 > 最好每次执行cmake构建语句时将原来生成的build文件夹删掉，避免因使用原来的缓存文件而没有刷新环境变量导致找不到库
